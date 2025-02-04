@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cat Zone</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            .font-poppins{
+                font-family: 'Poppins', sans-serif;
+            }
+            .div-2{
+            /* width: 300px;
+            height: 50px; */
+            font-weight: bold;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation: mymove 3s linear 2s infinite alternate;
+            animation-fill-mode: forwards-backwords;
+          }
+
+          #div2 {animation-timing-function: ease;}
+          @keyframes mymove {
+            from {left: 0px;}
+            to {left: 300px;}
+          }
+        </style>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'cat-primary': 'rgba(249, 223, 138, 1)',
+                    'cat-primary-bg': 'rgba(255, 249, 244, 1)',
+                  }
+                }
+              }
+            }
+          </script>
+    </head>
+
+<body class="font-poppins">
+
+    <header>
+
+       <nav>
+
+        <div class="navbar bg-cat-primary-bg px-20 ">
+            <div class="navbar-start">
+              
+              <img class="size-7 mb-2" src="c1-assets/logo-header.png" alt="">
+              <a class="btn btn-ghost hidden sm:block ">Browse<span class="text-yellow-400 lg:mx-2 text-2xl">4</span>Pets</a>
+            </div>
+
+            <div class="navbar-center hidden lg:flex ">
+              <ul class="menu menu-horizontal px-1 hidden sm:block lg:flex">
+                <li><a>Find a pet</a></li>
+                <li>
+                    <summary>Breeds</summary>
+                </li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-end">
+                <i class="fa-regular fa-bell text-1xl mr-4 hidden sm:block">  </i>
+                <i class="fa-solid fa-magnifying-glass text-1xl mr-4 hidden sm:block">  </i>
+                <a class="btn bg-cat-primary hidden sm:block lg:pt-4">Login</a>
+                <a class="btn bg-cat-primary hidden sm:block lg:pt-4">Register</a>
+            </div>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost md:hidden lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              
+            </div>
+            
+          </div>
+        
+       </nav> 
+       <hr>
+        <div class="hero">
+            <div class="hero-content px-20 my-10 grid lg:grid-cols-1">
+              <div class="z-10"" >
+                <!-- <div class="div-2" id="div2">ease</div> -->
+                <h1 class="text-2xl font-bold">Pamper Your Pet,<br> Because They Deserve <br>the Bes</h1>
+                <p class="py-5">
+                    Discover a world of treats,
+                     toys, and <br>essentials handpicked for your furry friends.<br> Shop now and make tails wag with joy!
+                </p>
+                <button id="div2" class="div-2 btn bg-cat-primary scale-105 transition-transform duration-300">Get Started</button>
+              </div>
+              <div class="">
+                <img src="c1-assets/cat-big.png" class="lg:-mt-40 lg:-mr-20" />
+              </div>
+              
+            </div>
+          </div>
+    </header>
+
+    <main>
+      <section class="px-20 my-10">
+        <h2 class="text-3xl font-bold mb-4">Browse By Categories</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div class="card bg-cat-primary items-center text-center shadow-xl">
+            <div class="avatar">
+              <div class="w-19 rounded-full border-8 border-white bg-white mt-5">
+                <img src="c1-assets/dog-cartoon.png"/>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Dog</h2>
+              <p>3 items</p>
+            </div>
+          </div>
+          <div class="card bg-cat-primary items-center text-center">
+            <div class="avatar">
+              <div class="w-19 rounded-full border-8 border-white bg-white mt-5">
+                <img src="c1-assets/bird-cartoon.png"/>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Dog</h2>
+              <p>3 items</p>
+            </div>
+          </div>
+          <div class="card bg-cat-primary items-center text-center">
+            <div class="avatar">
+              <div class="w-19 rounded-full border-8 border-white bg-white mt-5">
+                <img src="c1-assets/cat-cartoon.png"/>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Dog</h2>
+              <p>3 items</p>
+            </div>
+          </div>
+          <div class="card bg-cat-primary items-center text-center">
+            <div class="avatar">
+              <div class="w-19 rounded-full border-8 border-white bg-white mt-5">
+                <img src="c1-assets/pet-couch.png"/>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Dog</h2>
+              <p>3 items</p>
+            </div>
+          </div>
+          <div class="card bg-cat-primary items-center text-center">
+            <div class="avatar">
+              <div class="w-19 rounded-full border-8 border-white bg-white mt-5">
+                <img src="c1-assets/mouse-cartoon.png"/>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Dog</h2>
+              <p>3 items</p>
+            </div>
+          </div>
+          <div class="card bg-cat-primary items-center text-center">
+            <div class="avatar">
+              <div class="w-19 rounded-full border-8 border-white bg-white mt-5">
+                <img src="c1-assets/rabbit-cartoon.png"/>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Dog</h2>
+              <p>3 items</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-cat-primary-bg">
+        <h2 class="text-3xl font-bold mt-5 px-20">Browse By Categories</h2>
+        <div class="hero">
+
+          <div class="hero-content flex-col lg:flex-row px-20 my-2 grid grid-cols-1 lg:grid-cols-12 gap-4 ">
+
+            <!-- <div class="bg-cat-primary rounded-lg p-5">
+              <div class="flex-1">
+                <h2 class="font-bold text-2xl">T-Shirt For Dogs <br></h2>
+                <p class="text-gray-600">Discose a world or tears, toys and <br>animalas handwriting <br><br></p>
+                <button class="btn bg-white">Shop Now</button>
+              </div>
+              <div class="">
+                <img class=" w-9/12" src="c1-assets/cute-pet-small.png"" />
+              </div>
+            </div> -->
+            <!-- <div class="grid grid-cols-2 lg:grid-cosl-3 gap-3">
+              <div class="bg-orange-300 flex rounded-lg p-1">
+                <img src="c1-assets/fish-cartoon.png" alt="">
+                <p>Pet Bed</p>
+              </div>
+              <div class="bg-orange-300 flex rounded-lg p-1">
+                <img src="c1-assets/fish-cartoon.png" alt="">
+                <p>Pet Bed</p>
+              </div>
+              <div class="bg-orange-300 flex rounded-lg p-1">
+                <img src="c1-assets/fish-cartoon.png" alt="">
+                <p>Pet Bed</p>
+              </div>
+              <div class="bg-orange-300 flex rounded-lg p-1">
+                <img src="c1-assets/fish-cartoon.png" alt="">
+                <p>Pet Bed</p>
+              </div>
+              <div class="bg-orange-300 flex rounded-lg p-1">
+                <img src="c1-assets/fish-cartoon.png" alt="">
+                <p>Pet Bed</p>
+              </div>
+              <div class="bg-orange-300 flex rounded-lg p-1">
+                <img src="c1-assets/fish-cartoon.png" alt="">
+                <p>Pet Bed</p>
+              </div>
+              <div class="bg-orange-300 flex rounded-lg p-1">
+                <img src="c1-assets/fish-cartoon.png" alt="">
+                <p>Pet Bed</p>
+              </div>
+              <div class="bg-orange-300 flex rounded-lg p-1">
+                <img src="c1-assets/fish-cartoon.png" alt="">
+                <p>Pet Bed</p>
+              </div>
+              <div class="bg-orange-300 flex rounded-lg p-1">
+                <img src="c1-assets/fish-cartoon.png" alt="">
+                <p>Pet Bed</p>
+              </div>
+            </div> -->
+
+            <div class="lg:col-span-4 col-span-8 bg-yellow-200 p-6 rounded-lg shadow-lg flex flex-col ">
+              <h2 class="text-lg font-bold">T-Shirt For Dogs</h2>
+              <p class="text-gray-600 mt-2">Discover a world of treats, toys, and essentials handpicked for your pet.</p>
+              <button class="btn bg-white mt-2">Shop Now</button>
+              <img src="c1-assets/cute-pet-small.png" alt="Dog T-Shirt" class="w-full">
+            </div>
+
+
+            <div class="col-span-8 grid grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Product Card -->
+              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img src="c1-assets/fish-cartoon.png" alt="Pet Bed" class="w-16 h-16">
+                <div class="flex items-center mt-2 text-yellow-500">
+                  ⭐ 4.5
+                </div>
+                <h3 class="text-md font-semibold">Pet Bed</h3>
+                <p class="text-gray-500">$39.99</p>
+              </div>
+        
+              <!-- Duplicate the above Product Card 7 times -->
+              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img src="c1-assets/bird-cartoon.png" alt="Pet Bed" class="w-16 h-16">
+                <div class="flex items-center mt-2 text-yellow-500">
+                  ⭐ 4.5
+                </div>
+                <h3 class="text-md font-semibold">Pet Bed</h3>
+                <p class="text-gray-500">$39.99</p>
+              </div>
+        
+              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img src="c1-assets/cat-cartoon.png" alt="Pet Bed" class="w-16 h-16">
+                <div class="flex items-center mt-2 text-yellow-500">
+                  ⭐ 4.5
+                </div>
+                <h3 class="text-md font-semibold">Pet Bed</h3>
+                <p class="text-gray-500">$39.99</p>
+              </div>
+        
+              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img src="c1-assets/dog-cartoon.png" alt="Pet Bed" class="w-16 h-16">
+                <div class="flex items-center mt-2 text-yellow-500">
+                  ⭐ 4.5
+                </div>
+                <h3 class="text-md font-semibold">Pet Bed</h3>
+                <p class="text-gray-500">$39.99</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img src="c1-assets/mouse-cartoon.png" alt="Pet Bed" class="w-16 h-16">
+                <div class="flex items-center mt-2 text-yellow-500">
+                  ⭐ 4.5
+                </div>
+                <h3 class="text-md font-semibold">Pet Bed</h3>
+                <p class="text-gray-500">$39.99</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img src="c1-assets/pet-couch.png" alt="Pet Bed" class="w-16 h-16">
+                <div class="flex items-center mt-2 text-yellow-500">
+                  ⭐ 4.5
+                </div>
+                <h3 class="text-md font-semibold">Pet Bed</h3>
+                <p class="text-gray-500">$39.99</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img src="c1-assets/rabbit-cartoon.png" alt="Pet Bed" class="w-16 h-16">
+                <div class="flex items-center mt-2 text-yellow-500">
+                  ⭐ 4.5
+                </div>
+                <h3 class="text-md font-semibold">Pet Bed</h3>
+                <p class="text-gray-500">$39.99</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+                <img src="c1-assets/cat-cartoon.png" alt="Pet Bed" class="w-16 h-16">
+                <div class="flex items-center mt-2 text-yellow-500">
+                  ⭐ 4.5
+                </div>
+                <h3 class="text-md font-semibold">Pet Bed</h3>
+                <p class="text-gray-500">$39.99</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center hidden sm:block">
+                <img src="c1-assets/fish-cartoon.png" alt="Pet Bed" class="w-16 h-16 ">
+                <div class="flex items-center mt-2 text-yellow-500">
+                  ⭐ 4.5
+                </div>
+                <h3 class="text-md font-semibold">Pet Bed</h3>
+                <p class="text-gray-500">$39.99</p>
+              </div>
+              
+          </div> 
+
+        </div>
+      </section>
+
+      <section class="px-20 mb-10">
+        <h2 class="text-3xl font-bold py-8">Everyday low Price</h2>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <div class="bg-gradient-to-l from-blue-300 to-green-50 p-10 flex rounded-lg">
+            <div>
+              <p class="text-gray-500">Under Price</p>
+              <h2 class="text-2xl font-bold">Pet Grooming Mitt</h2>
+              <p class="text-white">Easy Hair Removal</p>
+              <h1 class="text-4xl font-bold">$7.99</h1>
+            </div>
+            <div>
+              <img src="c1-assets/cute-dog-mid.png" alt="">
+            </div>
+          </div>
+          <div class="bg-gradient-to-l from-orange-300 to-blue-50 p-10 rounded-lg">
+            <div>
+              <h2 class="text-2xl">T-Shirt for Dogs</h2>
+              <h1 class="text-3xl text-yellow-300">$7.99</h1>
+            </div>
+            <div>
+              <img src="c1-assets/cute-pet-mid.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-24">
+        <h3 class="text-4xl font-bold text-center mb-12">frquentlly Asked <span class="text-yellow-600">Questions</span></h3>
+        <div class="hero px-20">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="c1-assets/cute-pet-mid.png"
+                class="w-full rounded-lg shadow-2xl" />
+              <div class="space-y-5">
+
+                  <div class="collapse collapse-arrow border border-blue-100">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What are the most important things I should
+                        know about riding a bike?</div>
+                    <div class="collapse-content">
+                      <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will 
+                        help you be a more focused and legally compliant bike rider. </p>
+                    </div>
+                  </div>
+
+                  <div class="collapse collapse-arrow border border-blue-100">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Safety First! Always obey the rules of the 
+                        road. Obey all traffic signals, signs</div>
+                    <div class="collapse-content">
+                      <p>afety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will 
+                        help you be a more focused and legally compliant bike rider.</p>
+                    </div>
+                  </div>
+
+                  <div class="collapse collapse-arrow border border-blue-100">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">What are the most important things I should
+                        know about riding a bike?</div>
+                    <div class="collapse-content">
+                      <p>afety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will 
+                        help you be a more focused and legally compliant bike rider.</p>
+                    </div>
+                  </div>
+
+                  <!-- <div class="collapse collapse-arrow border border-blue-100">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What are the most important things I should
+                        know about riding a bike?</div>
+                    <div class="collapse-content">
+                      <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will 
+                        help you be a more focused and legally compliant bike rider. </p>
+                    </div>
+                  </div>
+
+                  <div class="collapse collapse-arrow border border-blue-100">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Safety First! Always obey the rules of the 
+                        road. Obey all traffic signals, signs</div>
+                    <div class="collapse-content">
+                      <p>afety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will 
+                        help you be a more focused and legally compliant bike rider.</p>
+                    </div>
+                  </div> -->
+
+                  
+              </div>
+            </div>
+          </div>
+
+    </section>
+      
+    </main>
+
+    <section class="px-20">
+      <div class="lg:flex bg-yellow-50 p-10 rounded-lg">
+        <div>
+          <img src="c1-assets/cute-pet-small.png" alt="">
+        </div>
+        <div class=" text-center lg:ml-20 lg:mt-20 ">
+          <h1 class="text-2xl font-bold">Get Pawsome News! <br><br></h1>
+          <p>Eclusive training tips, Product deals and more. <br><br></p>
+          <button class="btn bg-yellow-300">Subscrive</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-yellow-300 text-base-content px-20 py-10">
+      <nav>
+        <img src="c1-assets/logo-footer.png" alt="">
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav class="lg:-ml-20">
+        <h6 class="footer-title">Social</h6>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+</body>
+</html>
